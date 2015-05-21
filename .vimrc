@@ -125,11 +125,18 @@ Bundle 'gmarik/Vundle.vim'
 " 开启目录树导航
 Bundle 'scrooloose/nerdtree.git'
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen = 1
 
 " 括号匹配
 Bundle 'jiangmiao/auto-pairs.git'
-let g:AutoPairsFlyMode = 1
-let g:AutoPairsShortcutBackInsert = '<M-b>'
+" let g:AutoPairsFlyMode = 1
+" let g:AutoPairsShortcutBackInsert = '<M-b>'
+
+" 索引
+" 需要安装ctags：sudo apt-get install ctags
+Bundle 'majutsushi/tagbar'
+nmap <F9> :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
 
 " 彩虹括号
 Bundle 'kien/rainbow_parentheses.vim'
