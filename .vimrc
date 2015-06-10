@@ -92,7 +92,6 @@ au Syntax * RainbowParenthesesLoadBraces
 set t_Co=256
 let g:solarized_termcolors=256
 Bundle 'altercation/vim-colors-solarized.git'
-"syntax enable
 set background=light
 colorscheme solarized
 
@@ -129,7 +128,9 @@ hi link EasyMotionShade Comment
 Bundle 'Valloric/YouCompleteMe'
 
 " 快速插入自定义代码段
-" Track the engine.
+" 使用前需要挪动 snippets 的位置
+" sudo rm -rf ~/.vim/UltiSnips/
+" sudo ln -s ~/.vim/bundle/vim-snippets/UltiSnips ~/.vim/UltiSnips
 Bundle 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Bundle 'honza/vim-snippets'
