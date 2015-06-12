@@ -60,6 +60,7 @@ let g:AutoPairsShortcutBackInsert = '<C-b>'
 Bundle 'majutsushi/tagbar'
 nmap <F9> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
+let g:tagbar_autoclose = 1
 
 " 彩虹括号
 Bundle 'kien/rainbow_parentheses.vim'
