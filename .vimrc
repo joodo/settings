@@ -156,3 +156,6 @@ set foldignore=
 
 " 粘贴模式
 :set pastetoggle=<F11>
+
+" 黑洞寄存器
+noremap <C-d> "_d
