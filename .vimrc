@@ -100,7 +100,7 @@ colorscheme solarized
 Bundle 'vim-airline'
 set laststatus=2
 " putty下会乱码
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 " Tab line设置
 let g:airline#extensions#tabline#enabled = 1
 noremap <Tab> <C-w>w
@@ -127,6 +127,8 @@ hi link EasyMotionShade Comment
 " cd ~/.vim/bundle/YouCompleteMe
 " ./install.sh --clang-completer
 Bundle 'Valloric/YouCompleteMe'
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " 快速插入自定义代码段
 " 使用前需要挪动 snippets 的位置
@@ -150,6 +152,7 @@ set nowrap
 " 代码折叠 zc, zo
 set foldmethod=indent
 set foldlevelstart=99
+set foldignore=
 
 " 粘贴模式
 :set pastetoggle=<F11>
