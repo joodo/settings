@@ -1,0 +1,22 @@
+alias s.v="vim ~/.vimrc"
+alias s.b="vim ~/.bash_aliases"
+
+alias g.="git"
+alias g.ps="git push"
+alias g.pl="git pull"
+alias g.c="git commet -m"
+alias g.a="git add"
+alias g.aa="git add ."
+alias g.s="git status"
+
+alias v.a="source ../bin/activate"
+alias v.d="deactivate"
+
+alias d.="python manage.py"
+alias d.r="python manage.py runserver"
+alias d.rr="python manage.py runserver 0.0.0.0:80"
+alias d.r&="python manage.py runserver 0.0.0.0:80 1>/dev/null/ 2>&1 &"
+alias d.makem="python manage.py makemigrations"
+alias d.m="python manage.py migrate"
+alias d.t="python manage.py test"
+alias d.s="python manage.py shell"

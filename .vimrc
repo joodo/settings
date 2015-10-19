@@ -49,6 +49,7 @@ Bundle 'gmarik/Vundle.vim'
 Bundle 'scrooloose/nerdtree.git'
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
+let NERDTreeIgnore = ['\.pyc']
 
 " 括号匹配
 Bundle 'jiangmiao/auto-pairs.git'
@@ -158,4 +159,4 @@ set foldignore=
 :set pastetoggle=<F11>
 
 " 黑洞寄存器
-noremap <C-d> "_d
+noremap <S-x> "_d
