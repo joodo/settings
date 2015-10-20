@@ -1,6 +1,6 @@
 set encoding=utf-8
 
-let mapleader = ","
+let mapleader = ";"
 
 " tab 和缩进
 set tabstop=4
@@ -65,7 +65,7 @@ Bundle 'gmarik/Vundle.vim'
 
 " 开启目录树导航
 Bundle 'scrooloose/nerdtree.git'
-map <C-n> :NERDTreeToggle<CR>
+map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore = ['\.pyc']
 
@@ -77,7 +77,7 @@ let g:AutoPairsShortcutBackInsert = '<C-b>'
 " 索引
 " 需要安装ctags：sudo apt-get install ctags
 Bundle 'majutsushi/tagbar'
-nmap <C-t> :TagbarToggle<CR>
+nmap <Leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 
