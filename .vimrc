@@ -2,10 +2,13 @@ set encoding=utf-8
 
 let mapleader = ","
 
-" tab
-set shiftwidth=4
+" tab 和缩进
 set tabstop=4
+set softtabstop=4
 set expandtab
+
+set shiftwidth=4
+set autoindent
 
 " 历史和撤销
 set history=50		" keep 50 lines of command line history
@@ -29,6 +32,21 @@ set hlsearch        " 高亮搜索
 
 " 行号
 set nu!
+
+" 换行与折行
+" textwidth=70
+set nowrap
+
+" 代码折叠 zc, zo
+set foldmethod=indent
+set foldlevelstart=99
+set foldignore=
+
+" 粘贴模式
+:set pastetoggle=<F11>
+
+" 黑洞寄存器
+noremap <S-x> "_d
 
 " 去掉有关vi一致性模式，避免以前版本的bug和局限
 set nocompatible
@@ -145,18 +163,3 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 
 filetype plugin indent on
-
-" 换行与折行
-" textwidth=70
-set nowrap
-
-" 代码折叠 zc, zo
-set foldmethod=indent
-set foldlevelstart=99
-set foldignore=
-
-" 粘贴模式
-:set pastetoggle=<F11>
-
-" 黑洞寄存器
-noremap <S-x> "_d
