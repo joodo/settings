@@ -8,6 +8,7 @@ alias g.c="git commit -m"
 alias g.a="git add"
 alias g.aa="git add -A"
 alias g.s="git status"
+alias g.r="git reset"
 
 alias v.a="source ../bin/activate"
 alias v.d="deactivate"
