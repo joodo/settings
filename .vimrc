@@ -65,7 +65,7 @@ Bundle 'gmarik/Vundle.vim'
 
 " 开启目录树导航
 Bundle 'scrooloose/nerdtree.git'
-map <Leader>n :NERDTreeToggle<CR>
+map <Leader>v :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore = ['\.pyc']
 
