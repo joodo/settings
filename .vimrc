@@ -43,7 +43,7 @@ set foldlevelstart=99
 set foldignore=
 
 " 粘贴模式
-:set pastetoggle=<F11>
+:set pastetoggle=<F12>
 
 " 黑洞寄存器
 noremap <S-x> "_d
@@ -77,7 +77,7 @@ let g:AutoPairsShortcutBackInsert = '<C-b>'
 " 索引
 " 需要安装ctags：sudo apt-get install ctags
 Bundle 'majutsushi/tagbar'
-nmap <F9> :TagbarToggle<CR>
+nmap <C-t> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 
@@ -160,6 +160,16 @@ Bundle 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger="<c-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+" 批量变量修改
+Bundle 'terryma/vim-multiple-cursors'
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
+
+" 加括号
+Bundle 'tpope/vim-surround'
 
 
 filetype plugin indent on
