@@ -48,6 +48,9 @@ set foldignore=
 " 黑洞寄存器
 noremap <S-x> "_d
 
+" 后台时自动保存
+noremap <C-z> :wa<CR><C-z>
+
 " 去掉有关vi一致性模式，避免以前版本的bug和局限
 set nocompatible
 
@@ -65,7 +68,7 @@ Bundle 'gmarik/Vundle.vim'
 
 " 开启目录树导航
 Bundle 'scrooloose/nerdtree.git'
-map <Leader>v :NERDTreeToggle<CR>
+map <Leader>n :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore = ['\.pyc']
 
