@@ -22,9 +22,14 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" 高亮当前行和列
-set cursorline
-set cursorcolumn
+" 高亮当前行和列，只高亮活动窗口
+augroup CursorLineOnlyInActiveWindow
+    autocmd!
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    autocmd WinLeave * setlocal nocursorline
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
+    autocmd WinLeave * setlocal nocursorcolumn
+augroup END
 
 " 搜索
 set incsearch		" 增量搜索
