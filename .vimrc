@@ -5,10 +5,10 @@ let mapleader = ";"
 " tab 和缩进
 set tabstop=4
 set softtabstop=4
-set expandtab
+set smarttab
 
 set shiftwidth=4
-set autoindent
+set cindent
 
 " 历史和撤销
 set history=50		" keep 50 lines of command line history
@@ -35,6 +35,9 @@ augroup END
 set incsearch		" 增量搜索
 set hlsearch        " 高亮搜索
 
+" 拼写检查
+set spell
+
 " 行号
 set nu!
 
@@ -51,10 +54,13 @@ set foldignore=
 :set pastetoggle=<F12>
 
 " 黑洞寄存器
-noremap <S-x> "_d
+noremap <S-x> "_dp
 
 " 后台时自动保存
 noremap <C-z> :wa<CR><C-z>
+
+" 切换窗口
+noremap <Tab> <C-w>w
 
 " 去掉有关vi一致性模式，避免以前版本的bug和局限
 set nocompatible
@@ -81,6 +87,9 @@ let NERDTreeIgnore = ['\.pyc']
 Bundle 'jiangmiao/auto-pairs.git'
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutBackInsert = '<C-b>'
+
+" python 自动缩进
+Bundle 'hynek/vim-python-pep8-indent'
 
 " 索引
 " 需要安装ctags：sudo apt-get install ctags
@@ -129,11 +138,10 @@ set laststatus=2
 " putty下会乱码
 let g:airline_powerline_fonts = 1
 " Tab line设置
-let g:airline#extensions#tabline#enabled = 1
-noremap <Tab> <C-w>w
-map <S-tab> :bn<CR>
-map <C-h> :bp<CR>
-map <C-w> :bd<CR>
+" let g:airline#extensions#tabline#enabled = 1
+" map <S-tab> :bn<CR>
+" map <C-h> :bp<CR>
+" map <C-w> :bd<CR>
 
 " 缩进标识
 Bundle 'Yggdroot/indentLine'
