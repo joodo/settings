@@ -134,7 +134,11 @@ colorscheme solarized
 
 " 状态栏美观
 Bundle 'vim-airline'
+set ambiwidth=single
 set laststatus=2
+let g:airline_exclude_preview = 1
+" 显示 git 分支
+Bundle 'tpope/vim-fugitive'
 " putty下会乱码
 let g:airline_powerline_fonts = 1
 " Tab line设置
