@@ -27,8 +27,8 @@ augroup CursorLineOnlyInActiveWindow
     autocmd!
     autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
     autocmd WinLeave * setlocal nocursorline
-    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
-    autocmd WinLeave * setlocal nocursorcolumn
+"    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
+"    autocmd WinLeave * setlocal nocursorcolumn
 augroup END
 
 " 搜索
@@ -44,6 +44,9 @@ set nu!
 " 换行与折行
 " textwidth=70
 set nowrap
+
+" 80 行 显示竖线
+set colorcolumn=80
 
 " 代码折叠 zc, zo
 set foldmethod=indent
@@ -61,6 +64,14 @@ noremap <C-z> :wa<CR><C-z>
 
 " 切换窗口
 noremap <Tab> <C-w>w
+
+" a 选择时不包括前面的空格
+vnoremap a' 2i'
+vnoremap a" 2i"
+vnoremap a` 2i`
+onoremap a' 2i'
+onoremap a" 2i"
+onoremap a` 2i`
 
 " 去掉有关vi一致性模式，避免以前版本的bug和局限
 set nocompatible
@@ -153,6 +164,7 @@ let g:indentLine_color_term = 187
 
 " 将代码行最后无效的空格标红
 Bundle 'bronson/vim-trailing-whitespace'
+map <Leader><Space> :FixWhitespace<CR>
 
 " 快速移动
 Bundle 'Lokaltog/vim-easymotion'
