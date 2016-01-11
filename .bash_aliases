@@ -10,6 +10,8 @@ alias g.a="git add"
 alias g.aa="git add -A"
 alias g.s="git status"
 alias g.r="git reset"
+alias g.b="git branch"
+alias g.cko="git checkout"
 
 alias v.a="source ../bin/activate"
 alias v.d="deactivate"
