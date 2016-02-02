@@ -65,6 +65,9 @@ noremap <C-z> :wa<CR><C-z>
 " 切换窗口
 noremap <Tab> <C-w>w
 
+" 删除到下一行
+noremap dJ d$Jx
+
 " a 选择时不包括前面的空格
 vnoremap a' 2i'
 vnoremap a" 2i"
@@ -178,7 +181,7 @@ hi link EasyMotionShade Comment
 " cd ~/.vim/bundle/YouCompleteMe
 " ./install.sh --clang-completer
 Bundle 'Valloric/YouCompleteMe'
-let g:ycm_autoclose_preview_window_after_completion = 1
+"let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " 快速插入自定义代码段
