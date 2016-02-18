@@ -57,7 +57,7 @@ set foldignore=
 :set pastetoggle=<F12>
 
 " 黑洞寄存器
-noremap <S-x> "_dp
+noremap <S-x> "_d
 
 " 后台时自动保存
 noremap <C-z> :wa<CR><C-z>
@@ -80,7 +80,6 @@ onoremap a` 2i`
 set nocompatible
 
 " Vundle
-" 命令行执行 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim 安装
 " :BundleList     //会显示你vimrc里面填写的所有插件名称
 " :BundleInstall  //会自动下载安装或更新你的插件。
 " :BundleClean    //清理不使用的插件
@@ -106,7 +105,6 @@ let g:AutoPairsShortcutBackInsert = '<C-b>'
 Bundle 'hynek/vim-python-pep8-indent'
 
 " 索引
-" 需要安装ctags：sudo apt-get install ctags
 Bundle 'majutsushi/tagbar'
 nmap <Leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
@@ -177,17 +175,11 @@ hi link EasyMotionTarget2Second Search
 hi link EasyMotionShade Comment
 
 " 自动补全
-" 需要编译YCM。方法：
-" cd ~/.vim/bundle/YouCompleteMe
-" ./install.sh --clang-completer
 Bundle 'Valloric/YouCompleteMe'
 "let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " 快速插入自定义代码段
-" 使用前需要挪动 snippets 的位置
-" sudo rm -rf ~/.vim/UltiSnips/
-" sudo ln -s ~/.vim/bundle/vim-snippets/UltiSnips ~/.vim/UltiSnips
 Bundle 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Bundle 'honza/vim-snippets'
