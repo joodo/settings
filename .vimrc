@@ -174,7 +174,7 @@ Bundle 'Lokaltog/vim-easymotion'
 hi link EasyMotionTarget Search
 hi link EasyMotionTarget2First Search
 hi link EasyMotionTarget2Second Search
-hi link EasyMotionShade Comment
+" hi link EasyMotionShade Comment
 
 " 自动补全
 " 需要编译YCM。方法：
@@ -205,6 +205,19 @@ let g:multi_cursor_quit_key='<Esc>'
 
 " 加括号
 Bundle 'tpope/vim-surround'
+
+" 按照驼峰或下划线移动
+" Bundle 'bkad/CamelCaseMotion'
+" map <silent> w <Plug>CamelCaseMotion_w
+" map <silent> b <Plug>CamelCaseMotion_b
+" map <silent> e <Plug>CamelCaseMotion_e
+" map <silent> ge <Plug>CamelCaseMotion_ge
+" omap <silent> iw <Plug>CamelCaseMotion_iw
+" xmap <silent> iw <Plug>CamelCaseMotion_iw
+" omap <silent> ib <Plug>CamelCaseMotion_ib
+" xmap <silent> ib <Plug>CamelCaseMotion_ib
+" omap <silent> ie <Plug>CamelCaseMotion_ie
+" xmap <silent> ie <Plug>CamelCaseMotion_ie
 
 
 filetype plugin indent on
