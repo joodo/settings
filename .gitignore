@@ -2,3 +2,4 @@
 !.gitignore
 !.vimrc
 !.bash_alias
+!bundle_install.sh
