@@ -36,13 +36,13 @@ set incsearch		" 增量搜索
 set hlsearch        " 高亮搜索
 
 " 拼写检查
-set spell
+" set spell
 
 " 行号
 set nu!
 
 " 换行与折行
-" textwidth=70
+" set textwidth=70
 set nowrap
 
 " 80 行 显示竖线
@@ -61,6 +61,10 @@ noremap <S-x> "_d
 
 " 后台时自动保存
 noremap <C-z> :wa<CR><C-z>
+
+" 跳着移动
+noremap <C-j> 5j
+noremap <C-k> 5k
 
 " 切换窗口
 noremap <Tab> <C-w>w
@@ -197,6 +201,10 @@ let g:multi_cursor_quit_key='<Esc>'
 
 " 加括号
 Bundle 'tpope/vim-surround'
+
+" 拼写检查
+Bundle 'scrooloose/syntastic.git'
+let g:syntastic_python_pylint_args="-d C0103,C0111,R0903,W0141"
 
 " 按照驼峰或下划线移动
 " Bundle 'bkad/CamelCaseMotion'
