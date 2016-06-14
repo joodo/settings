@@ -203,8 +203,8 @@ let g:multi_cursor_quit_key='<Esc>'
 Bundle 'tpope/vim-surround'
 
 " 拼写检查
-Bundle 'scrooloose/syntastic.git'
-let g:syntastic_python_pylint_args="-d C0103,C0111,R0903,W0141"
+" Bundle 'scrooloose/syntastic.git'
+" let g:syntastic_python_pylint_args="-d C0103,C0111,R0903,W0141"
 
 " 按照驼峰或下划线移动
 " Bundle 'bkad/CamelCaseMotion'
